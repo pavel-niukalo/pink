@@ -36,7 +36,100 @@
     </header>
 
     <main>
+      <section class="contest">
+        <h2 class="visually-hidden">Форма для участия</h2>
+        <p class="contest__slogan slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
 
+        <form class="contest__form form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="form__fieldset">
+            <p class="form__wrapper">
+              <label class="form__text" for="second-name">Фамилия:</label>
+              <input class="form__input" id="second-name" type="text" name="secondName" value="Укажите фамилию *" required>
+            </p>
+            <p class="form__wrapper">
+              <label class="form__text" for="first-name">Имя:</label>
+              <input class="form__input" id="first-name" type="text" name="firstName" value="Введите ваше имя *" required>
+            </p>
+            <p class="form__wrapper">
+              <label class="form__text" for="middle-name">Отчество:</label>
+              <input class="form__input" id="middle-name" type="text" name="middleName" value="Ну и отчество тоже" required>
+            </p>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <label class="contest__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="selfie" checked>
+              <span class="checkbox__icon"></span>
+              Сделал селфи с акулой
+            </label>
+            <label class="contest__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="beach" checked>
+              <span class="checkbox__icon"></span>
+              Обгорел на пляже
+            </label>
+            <label class="contest__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="norris">
+              <span class="checkbox__icon"></span>
+              Видел Чака Норриса
+            </label>
+            <label class="contest__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="gift">
+              <span class="checkbox__icon"></span>
+              Накупил сувениров
+            </label>
+            <label class="contest__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="tower" checked>
+              <span class="checkbox__icon"></span>
+              Удержал башню
+            </label>
+            <label class="contest__checkbox checkbox">
+              <input class="checkbox__input" type="checkbox" name="hotel">
+              <span class="checkbox__icon"></span>
+              Разгромил отель
+            </label>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend>Контактная информация</legend>
+            <p class="form__wrapper">
+              <label class="form__text" for="phone">Номер телефона:</label>
+              <input class="form__input" id="phone" type="tel" name="usersPhone" value="Номер, пожалуйста">
+            </p>
+            <p class="form__wrapper">
+              <label class="form__text" for="email">Адрес почты:</label>
+              <input class="form__input" id="email" type="email" name="usersEmail" value="Введите почту *" required>
+            </p>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend>С каким приложением путешествовали?</legend>
+            <label class="contest__radio radio">
+              <input class="radio__input" type="radio" name="downloadApp" value="iOS" checked>
+              <span class="radio__icon"></span>
+              Pink для iOS
+            </label>
+            <label class="contest__radio radio">
+              <input class="radio__input" type="radio" name="downloadApp" value="Android">
+              <span class="radio__icon"></span>
+              Pink для Android
+            </label>
+            <label class="contest__radio radio">
+              <input class="radio__input" type="radio" name="downloadApp" value="Windows">
+              <span class="radio__icon"></span>
+              Windows Phone
+            </label>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend>Опишите свои эмоции</legend>
+            <textarea name="emotions" rows="4" cols="50">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
+
+          <button class="contest__post" type="submit">Отправить форму</button>
+          <p class="contest__varning">* - обязательные для заполнения поля</p>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
