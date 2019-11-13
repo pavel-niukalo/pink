@@ -120,6 +120,27 @@
           </li>
         </ul>
       </section>
+
+      <section class="form">
+        <h2 class="visually-hidden">Редактирование и отправка фото</h2>
+        <p class="form__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+
+        <div class="form__send editing">
+          <form class="editing__change" action="https://echo.htmlacademy.ru" method="post">
+            <img class="editing__image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="selected image">
+            <button class="editing__icon editing__icon--active editing__crop" type="button"></button>
+            <button class="editing__icon editing__fill" type="button"></button>
+            <button class="editing__icon editing__contrast" type="button"></button>
+            <div class="editing__scale" aria-label="Диапазон">
+              <div class="editing__range-toggle">
+                <button type="button" aria-label="Ползунок диапазона"></button>
+              </div>
+            </div>
+            <button class="editing__post" type="submit">Запостить</button>
+            <button class="editing__cancel" type="reset">Отмена</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
