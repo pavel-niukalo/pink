@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -13,25 +14,25 @@
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Фотографии</a>
+            <a class="site-list__link">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
 
       <div class="page-title">
-        <h1 class="page-title__text">Фотографии пользователей</h1>
+        <h1 class="page-title__text page-title__text--photo">Фотографии пользователей</h1>
       </div>
     </header>
 
@@ -128,12 +129,16 @@
         <div class="panel-editing__send editing">
           <form class="editing__change" action="https://echo.htmlacademy.ru" method="post">
             <img class="editing__image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="selected image">
+
             <button class="editing__icon editing__icon--active editing__crop" type="button" aria-label="Обрезать изображение"></button>
             <input class="editing__scale editing__scale-crop" type="range">
+
             <button class="editing__icon editing__fill" type="button" aria-label="Изменить заливку"></button>
             <input class="editing__scale editing__scale-fill" type="range">
+
             <button class="editing__icon editing__contrast" type="button" aria-label="Изменить контрастность"></button>
             <input class="editing__scale editing__scale-contrast" type="range">
+
             <button class="editing__post" type="submit">Запостить</button>
             <button class="editing__cancel" type="reset">Отмена</button>
           </form>
@@ -148,19 +153,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Twitter</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="twitter"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="facebook"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademyru">Youtube</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademyru" aria-label="youtube"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html academy"></a>
       </div>
     </footer>
 

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -13,19 +14,19 @@
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -39,13 +40,13 @@
           <a class="promo__link" href="#">Скачать приложение</a>
           <ul class="promo__list list-icon">
             <li class="list-icon__item">
-              <a class="list-icon__link list-icon__link--apple" href="#">Apple</a>
+              <a class="list-icon__link list-icon__link--apple" href="#" aria-label="apple"></a>
             </li>
             <li class="list-icon__item">
-              <a class="list-icon__link list-icon__link--android" href="#">Android</a>
+              <a class="list-icon__link list-icon__link--android" href="#" aria-label="android"></a>
             </li>
             <li class="list-icon__item">
-              <a class="list-icon__link list-icon__link--windows" href="#">Windows</a>
+              <a class="list-icon__link list-icon__link--windows" href="#" aria-label="windows"></a>
             </li>
           </ul>
           <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -56,8 +57,8 @@
     <main>
       <section class="features">
         <h2 class="visually-hidden">Особенности приложения</h2>
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что вам предложить!</p>
+        <p class="features__slogan">Устали от серости мегаполиса?</p>
+        <p class="features__slogan features__slogan--position">Нам есть, что вам предложить!</p>
 
         <ul class="features__list">
           <li class="features__item">
@@ -78,13 +79,14 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__list slider">
-          <blockquote class="reviews__quote slider__quote">          <cite class="reviews__author">Николай Петров</cite>
+          <blockquote class="reviews__quote slider__quote">
+          <cite class="reviews__author">Николай Петров</cite>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--active" type="button" aria-label="Посмотреть первый отзыв"></button>
+            <button class="slider__toggle" type="button" aria-label="Посмотреть второй отзыв"></button>
+            <button class="slider__toggle" type="button" aria-label="Посмотреть третий отзыв"></button>
           </p>
         </div>
       </section>
@@ -119,36 +121,36 @@
             </tr>
             <tr>
               <th class="tarrif__set">Розовый фильтр</th>
-              <td class="tarrif__set-yes">
+              <td class="tarrif__set-yes" aria-label="Есть в тарифе">
               </td>
-              <td class="tarrif__set-yes">
+              <td class="tarrif__set-yes" aria-label="Есть в тарифе">
               </td>
-              <td class="tarrif__set-yes">
+              <td class="tarrif__set-yes" aria-label="Есть в тарифе">
               </td>
             </tr>
             <tr>
               <th class="tarrif__set">Смайлики</th>
-              <td class="tarrif__set-no">
+              <td class="tarrif__set-no" aria-label="Нет в тарифе">
               </td>
-              <td class="tarrif__set-yes">
+              <td class="tarrif__set-yes" aria-label="Есть в тарифе">
               </td>
-              <td class="tarrif__set-yes">
+              <td class="tarrif__set-yes" aria-label="Есть в тарифе">
               </td>
             </tr>
             <tr>
               <th class="tarrif__set">Комментарии</th>
-              <td class="tarrif__set-no">
+              <td class="tarrif__set-no" aria-label="Нет в тарифе">
               </td>
-              <td class="tarrif__set-no">
+              <td class="tarrif__set-no" aria-label="Нет в тарифе">
               </td>
-              <td class="tarrif__set-yes">
+              <td class="tarrif__set-yes" aria-label="Есть в тарифе">
               </td>
             </tr>
           </table>
           <p class="tarrif__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button" aria-label="Посмотреть базовый тариф"></button>
+            <button class="slider__toggle" type="button" aria-label="Посмотреть стандартный тариф"></button>
+            <button class="slider__toggle" type="button" aria-label="Посмотреть полный тариф"></button>
           </p>
         </div>
       </section>

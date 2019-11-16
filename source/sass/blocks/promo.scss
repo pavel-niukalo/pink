@@ -1,0 +1,41 @@
+.promo {
+  padding-top: 23px;
+  text-align: center;
+}
+
+.promo__slogan {
+  width: 221px;
+  padding: 0;
+  margin: 0 auto;
+
+
+  line-height: 29px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.promo__download {
+  padding: 21px 20px 30px 19px;
+
+  text-align: center;
+}
+
+.promo__link {
+  display: block;
+  padding: 15px 39px 16px 30px;
+
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+
+  border: 3px solid #ffffff;
+  border-radius: 100px;
+}
+
+.promo__text {
+  padding-top: 10px;
+  padding-left: 3px;
+  margin: 0;
+}
