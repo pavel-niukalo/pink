@@ -4,7 +4,6 @@
 }
 
 .promo__slogan {
-  width: 221px;
   padding: 0;
   margin: 0 auto;
 
@@ -26,10 +25,23 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: #ffffff;
+  color: $white;
 
-  border: 3px solid #ffffff;
+  border: 3px solid $white;
   border-radius: 100px;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+
+    background-color: $white;
+  }
+
+  &:active {
+    color: $down-mobile;
+
+    background-color: $white;
+  }
 }
 
 .promo__text {

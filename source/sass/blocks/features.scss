@@ -3,8 +3,8 @@
 
   text-align: center;
 
-  background-color: #f2f2f2;
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-color: $light-grey;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position-x: center;
   background-position-y: 724px;
   background-repeat: no-repeat;
@@ -33,7 +33,6 @@
 }
 
 .features__item {
-  width: 259px;
   margin: 0 auto;
 }
 
@@ -46,7 +45,7 @@
   line-height: 24px;
   font-weight: 700;
 
-  color: #000000;
+  color: $black;
 }
 
 .features__text {
