@@ -1,0 +1,37 @@
+.photo-card {
+  padding-top: 20px;
+}
+
+.photo-card__image {
+  &--panorama {
+    margin-left: -20px;
+  }
+}
+
+.photo-card__quote {
+  padding: 18px 0 20px 18px;
+  margin: 0;
+  margin-top: -7px;
+
+  background-color: $light-grey;
+}
+
+.photo-card__author {
+  font-style: normal;
+  font-weight: 300;
+}
+
+.photo-card__text {
+  padding: 0;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.photo-card__like {
+  padding-left: 11px;
+
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $pink;
+}
