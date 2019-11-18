@@ -1,0 +1,30 @@
+.connections__question,
+.connections__link {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.connections__list {
+  list-style: none;
+}
+
+.connections__text {
+  font-size: 18px;
+}
+
+.connections__link {
+  color: $pink;
+
+  &:hover,
+  &:focus {
+    color: $dark-blue;
+
+    border-bottom: 2px solid $dark-blue;
+  }
+
+  &:active {
+    color: $down-link;
+
+    border: none;
+  }
+}

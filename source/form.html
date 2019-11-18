@@ -57,8 +57,8 @@
             </p>
           </fieldset>
 
-          <fieldset class="form__fieldset">
-            <legend>Ваши безбашенные достижения в путешествии</legend>
+          <fieldset class="form__fieldset form__fieldset--grey">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
             <label class="contest__checkbox checkbox">
               <input class="checkbox__input" type="checkbox" name="selfie" checked>
               <span class="checkbox__icon"></span>
@@ -92,7 +92,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend>Контактная информация</legend>
+            <legend class="form__legend">Контактная информация</legend>
             <p class="form__wrapper">
               <label class="form__text" for="phone">Номер телефона:</label>
               <input class="form__input" id="phone" type="tel" name="usersPhone" value="Номер, пожалуйста">
@@ -103,8 +103,8 @@
             </p>
           </fieldset>
 
-          <fieldset class="form__fieldset">
-            <legend>С каким приложением путешествовали?</legend>
+          <fieldset class="form__fieldset form__fieldset--grey">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
             <label class="contest__radio radio">
               <input class="radio__input" type="radio" name="downloadApp" value="iOS" checked>
               <span class="radio__icon"></span>
@@ -123,12 +123,12 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend>Опишите свои эмоции</legend>
-            <textarea name="emotions" rows="4" cols="50">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <legend class="form__legend">Опишите свои эмоции</legend>
+            <textarea class="form__emotions" name="emotions" rows="4" cols="50">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
 
           <button class="contest__post" type="submit">Отправить форму</button>
-          <p class="contest__varning">* - обязательные для заполнения поля</p>
+          <p class="contest__varning"><span class="contest__star">*</span> - обязательные поля</p>
         </form>
       </section>
     </main>
