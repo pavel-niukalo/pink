@@ -1,6 +1,15 @@
+.form__text,
+.form__legend {
+  text-transform: uppercase;
+  color: $pink;
+}
+
 .form__text {
   line-height: 30px;
-  color: $pink;
+}
+
+.form__legend {
+  line-height: 18px;
 }
 
 .form__input,
@@ -29,11 +38,6 @@
 
 .form__fieldset--grey {
   background-color: $light-grey;
-}
-
-.form__legend {
-  line-height: 18px;
-  color: $pink;
 }
 
 .form__emotions {
