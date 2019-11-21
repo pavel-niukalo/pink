@@ -1,0 +1,45 @@
+.form__text,
+.form__legend {
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.form__text {
+  line-height: 30px;
+}
+
+.form__legend {
+  line-height: 18px;
+}
+
+.form__input,
+.form__emotions {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: inherit;
+  color: $dark-blue;
+
+  border: solid 2px $grey;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    border: solid 2px $dark-blue;
+  }
+
+  &:active {
+    border: solid 2px $pink;
+  }
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__fieldset--grey {
+  background-color: $light-grey;
+}
+
+.form__emotions {
+  resize: none;
+}

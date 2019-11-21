@@ -1,0 +1,44 @@
+.tarrif {
+  background-color: $light-grey;
+}
+
+.tarrif__list {
+  border-collapse: collapse;
+}
+
+.tarrif__type {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tarrif__price {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.tarrif__type,
+.tarrif__price {
+  color: $white;
+
+  background-color: $dark-blue;
+  border-right: 2px solid $grey;
+  border-left: 2px solid $grey;
+}
+
+.tarrif__set {
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tarrif__set,
+.tarrif__set-yes,
+.tarrif__set-no {
+  background-color: $white;
+  border-right: 2px solid $grey;
+  border-bottom: 2px solid $grey;
+  border-left: 2px solid $grey;
+}

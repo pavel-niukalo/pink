@@ -1,0 +1,33 @@
+.contest__post {
+  font-size: 18px;
+  line-height: 30px;
+  color: $white;
+
+  background-color: $green;
+  border: 2px solid $green;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-green;
+    border: 2px solid $dark-green;
+  }
+
+  &:active {
+    color: $down-post;
+  }
+
+  &:disabled {
+    background-color: $grey;
+    border: 2px solid $grey;
+  }
+}
+
+.contest__varning {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest__star {
+  color: $pink;
+}
