@@ -1,30 +1,61 @@
 .photo-card {
-  padding-top: 20px;
+  margin-top: 20px;
+
+  text-align: left;
 }
 
-.photo-card__image {
+.photo-card__image-mobile {
   &--panorama {
     margin-left: -20px;
   }
 }
 
+.photo-card__image-tablet,
+.photo-card__image-desktop {
+  display: none;
+}
+
 .photo-card__quote {
   padding: 18px 0 20px 18px;
   margin: 0;
-  margin-top: -7px;
 
   background-color: $light-grey;
+
+  &--panorama {
+    margin-top: -7px;
+  }
+
+  &--position {
+    padding-bottom: 19px;
+  }
 }
 
 .photo-card__author {
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo-card__author-name {
+  font-size: 14px;
+  text-transform: none;
 }
 
 .photo-card__text {
   padding: 0;
   padding-bottom: 10px;
   margin: 0;
+
+  width: 251px;
+
+  &--position {
+    padding-bottom: 9px;
+  }
+
+  &--padding {
+    padding-bottom: 8px;
+  }
 }
 
 .photo-card__like {
@@ -34,4 +65,109 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $pink;
+}
+
+@media (min-width: 660px) {
+  .photo-card__image-mobile,
+  .photo-card__image-desktop {
+    display: none;
+  }
+
+  .photo-card__image-tablet {
+    display: block;
+
+    &--panorama {
+      margin-left: -40px;
+    }
+  }
+
+  .photo-card__quote {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 110px;
+
+    padding: 24px 0 21px 27px;
+
+    &--panorama {
+      padding: 24px 0 15px 27px;
+      margin: 0;
+      min-height: 81px;
+    }
+  }
+
+  .photo-card__text {
+    &--panorama {
+      width: 519px;
+    }
+  }
+
+  .photo-card__heart {
+    position: absolute;
+    bottom: 31px;
+    right: 30px;
+
+    &--panorama {
+      position: absolute;
+      right: 27px;
+      bottom: 82px;
+    }
+  }
+
+  .photo-card__like {
+    padding: 0;
+    margin-top: auto;
+
+    &--panorama {
+      position: absolute;
+      top: 25px;
+      right: 59px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-card__image-mobile,
+  .photo-card__image-tablet {
+    display: none;
+  }
+
+  .photo-card__image-desktop {
+    display: block;
+
+    &--panorama {
+      margin-left: -130px;
+    }
+  }
+
+  .photo-card__quote {
+    min-height: 110px;
+
+    padding: 24px 0 21px 27px;
+
+    &--panorama {
+      padding: 24px 0 14px 27px;
+      margin: 0;
+      min-height: 58px;
+    }
+  }
+
+  .photo-card__text {
+    &--panorama {
+      width: 873px;
+    }
+  }
+
+  .photo-card__heart {
+    &--panorama {
+      right: 30px;
+      bottom: 59px;
+    }
+  }
+
+  .photo-card__like {
+    &--panorama {
+      right: 62px;
+    }
+  }
 }
