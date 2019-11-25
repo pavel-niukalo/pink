@@ -2,6 +2,12 @@
   display: none;
 }
 
+.effect__wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px;
+}
+
 .effect__timer {
   position: relative;
   width: 238px;
@@ -76,13 +82,18 @@
 }
 
 @media (min-width: 660px) {
+  .effect {
+    display: block;
+  }
+
+
   .effect__deskrop {
     display: none;
   }
 
-  .effect {
+  .effect__wrapper {
     display: flex;
-    flex-direction: row;
+    width: 660px;
   }
 
   .effect__timer {
@@ -102,9 +113,13 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .effect {
     background-color: $light-grey;
+  }
+
+  .effect__wrapper {
+    width: 960px;
   }
 
   .effect__tablet {
@@ -117,7 +132,7 @@
 
   .effect__timer {
     margin-top: 24px;
-    margin-left: 131px;
+    margin-left: 11px;
     width: 298px;
     height: 345px;
   }

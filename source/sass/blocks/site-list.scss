@@ -40,7 +40,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .site-list {
     line-height: 18px;
     font-weight: 400;
@@ -52,6 +52,10 @@
     margin-right: 80px;
 
     box-shadow: none;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
   }
 
   .site-list__link {

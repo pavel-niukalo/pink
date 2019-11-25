@@ -16,14 +16,11 @@
 }
 
 .photo-card__quote {
-  padding: 18px 0 20px 18px;
+  padding: 18px 0 19px 18px;
   margin: 0;
+  margin-top: -7px;
 
   background-color: $light-grey;
-
-  &--panorama {
-    margin-top: -7px;
-  }
 
   &--position {
     padding-bottom: 19px;
@@ -85,9 +82,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 110px;
 
     padding: 24px 0 21px 27px;
+    margin-top: 0;
+    min-height: 110px;
 
     &--panorama {
       padding: 24px 0 15px 27px;
@@ -126,7 +124,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photo-card__image-mobile,
   .photo-card__image-tablet {
     display: none;
@@ -143,7 +141,7 @@
   .photo-card__quote {
     min-height: 110px;
 
-    padding: 24px 0 21px 27px;
+    padding: 23px 0 22px 27px;
 
     &--panorama {
       padding: 24px 0 14px 27px;
