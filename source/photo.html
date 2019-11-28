@@ -76,107 +76,103 @@
           <p class="photo__slogan slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
 
-        <ul class="photo__list">
-          <li class="photo__list-item photo__list-item--panorama photo-card">
+        <div class="photo__card photo__card--panorama photo-card">
+          <a class="photo-card__image" href="#">
+            <!-- Оставил все версии для ПП по макету, заменю после лекции на picture -->
+            <img class="photo-card__image-mobile photo-card__image-mobile--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
+            <img class="photo-card__image-tablet photo-card__image-tablet--panorama" src="img/panorama-tablet@1x.jpg" width="700" height="509" alt="panorama">
+            <img class="photo-card__image-desktop photo-card__image-desktop--panorama" src="img/panorama-desktop@1x.jpg" width="1200" height="506" alt="panorama">
+          </a>
+          <div class="photo-card__wrapper container">
+            <blockquote class="photo-card__quote photo-card__quote--panorama">
+              <cite class="photo-card__author photo-card__author--position"><b class="photo-card__author-name">Анна</b> (5 минут назад)</cite>
+              <p class="photo-card__text photo-card__text--panorama photo-card__text--position">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <button class="photo-card__heart photo-card__heart--panorama" aria-label="Поставить лайк"></button>
+              <span class="photo-card__like photo-card__like--panorama">Нравится: 215</span>
+            </blockquote>
+          </div>
+        </div>
+        <div class="photo__list-card container">
+          <div class="photo__card photo-card">
             <a class="photo-card__image" href="#">
-              <!-- Оставил все версии для ПП по макету, заменю после лекции на picture -->
-              <img class="photo-card__image-mobile photo-card__image-mobile--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="panorama">
-              <img class="photo-card__image-tablet photo-card__image-tablet--panorama" src="img/panorama-tablet@1x.jpg" width="700" height="509" alt="panorama">
-              <img class="photo-card__image-desktop photo-card__image-desktop--panorama" src="img/panorama-desktop@1x.jpg" width="1200" height="506" alt="panorama">
+              <img class="photo-card__image-mobile" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="camera and car">
+              <img class="photo-card__image-tablet" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="camera and car">
+              <img class="photo-card__image-desktop" src="img/photo-car-desktop@1x.jpg" width="300" height="400" alt="camera and car">
             </a>
-            <div class="photo-card__wrapper container">
-              <blockquote class="photo-card__quote photo-card__quote--panorama">
-                <cite class="photo-card__author photo-card__author--position"><b class="photo-card__author-name">Анна</b> (5 минут назад)</cite>
-                <p class="photo-card__text photo-card__text--panorama photo-card__text--position">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <button class="photo-card__heart photo-card__heart--panorama" aria-label="Поставить лайк"></button>
-                <span class="photo-card__like photo-card__like--panorama">Нравится: 215</span>
-              </blockquote>
-            </div>
-          </li>
-          <li class="photo__list-item photo-card">
-            <ul class="photo__list-second container">
-              <li class="photo__second-item photo-card">
-                <a class="photo-card__image" href="#">
-                  <img class="photo-card__image-mobile" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="camera and car">
-                  <img class="photo-card__image-tablet" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="camera and car">
-                  <img class="photo-card__image-desktop" src="img/photo-car-desktop@1x.jpg" width="300" height="400" alt="camera and car">
-                </a>
-                <blockquote class="photo-card__quote">
-                  <cite class="photo-card__author"><b class="photo-card__author-name">Левон</b> (5 часов назад)</cite>
-                  <p class="photo-card__text
-                  photo-card__text--padding">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                  <button class="photo-card__heart" aria-label="Поставить лайк"></button>
-                  <span class="photo-card__like">Нравится: 356</span>
-                </blockquote>
-              </li>
-              <li class="photo__second-item photo-card">
-                <a class="photo-card__image" href="#">
-                  <img class="photo-card__image-mobile" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="guitars">
-                  <img class="photo-card__image-tablet" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="guitars">
-                  <img class="photo-card__image-desktop" src="img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="guitars">
-                </a>
-                <blockquote class="photo-card__quote">
-                  <cite class="photo-card__author"><b class="photo-card__author-name">Антон</b> (12 часов назад)</cite>
-                  <p class="photo-card__text">Соседи будут рады!</p>
-                  <button class="photo-card__heart" aria-label="Поставить лайк"></button>
-                  <span class="photo-card__like">Нравится: 666</span>
-                </blockquote>
-              </li>
-              <li class="photo__second-item photo-card">
-                <a class="photo-card__image" href="#">
-                  <img class="photo-card__image-mobile" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="sky">
-                  <img class="photo-card__image-tablet" src="img/photo-window-tablet@1x.jpg" width="300" height="300" alt="sky">
-                  <img class="photo-card__image-desktop" src="img/photo-window-desktop@1x.jpg" width="300" height="400" alt="sky">
-                </a>
-                <blockquote class="photo-card__quote">
-                  <cite class="photo-card__author"><b class="photo-card__author-name">Борис</b> (20 часов назад)</cite>
-                  <p class="photo-card__text photo-card__text--position">Здесь могла быть ваша цитата о высоком и вечном</p>
-                  <button class="photo-card__heart" aria-label="Поставить лайк"></button>
-                  <span class="photo-card__like">Нравится: 215</span>
-                </blockquote>
-              </li>
-              <li class="photo__second-item photo-card">
-                <a class="photo-card__image" href="#">
-                  <img class="photo-card__image-mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="kuban melon">
-                  <img class="photo-card__image-tablet" src="img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="kuban melon">
-                  <img class="photo-card__image-desktop" src="img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="kuban melon">
-                </a>
-                <blockquote class="photo-card__quote">
-                  <cite class="photo-card__author"><b class="photo-card__author-name">Сергей</b> (25 часов назад)</cite>
-                  <p class="photo-card__text">Самая кубанская в мире!</p>
-                  <button class="photo-card__heart" aria-label="Поставить лайк"></button>
-                  <span class="photo-card__like">Нравится: 4</span>
-                </blockquote>
-              </li>
-              <li class="photo__second-item photo-card">
-                <a class="photo-card__image" href="#">
-                  <img class="photo-card__image-mobile" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="mountains">
-                  <img class="photo-card__image-tablet" src="img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="mountains">
-                  <img class="photo-card__image-desktop" src="img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="mountains">
-                </a>
-                <blockquote class="photo-card__quote">
-                  <cite class="photo-card__author"><b class="photo-card__author-name">Максим</b> (40 часов назад)</cite>
-                  <p class="photo-card__text">Где снег-то?</p>
-                  <button class="photo-card__heart" aria-label="Поставить лайк"></button>
-                  <span class="photo-card__like">Нравится: 150</span>
-                </blockquote>
-              </li>
-              <li class="photo__second-item photo-card">
-                <a class="photo-card__image" href="#">
-                  <img class="photo-card__image-mobile" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="plane">
-                  <img class="photo-card__image-tablet" src="img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="plane">
-                  <img class="photo-card__image-desktop" src="img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="plane">
-                </a>
-                <blockquote class="photo-card__quote">
-                  <cite class="photo-card__author"><b class="photo-card__author-name">Надежда</b> (45 часов назад)</cite>
-                  <p class="photo-card__text">Всем GM и взаимные лайки!</p>
-                  <button class="photo-card__heart" aria-label="Поставить лайк"></button>
-                  <span class="photo-card__like">Нравится: 2560</span>
-                </blockquote>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            <blockquote class="photo-card__quote">
+              <cite class="photo-card__author"><b class="photo-card__author-name">Левон</b> (5 часов назад)</cite>
+              <p class="photo-card__text
+              photo-card__text--padding">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <button class="photo-card__heart" aria-label="Поставить лайк"></button>
+              <span class="photo-card__like">Нравится: 356</span>
+            </blockquote>
+          </div>
+          <div class="photo__card photo-card">
+            <a class="photo-card__image" href="#">
+              <img class="photo-card__image-mobile" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="guitars">
+              <img class="photo-card__image-tablet" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="guitars">
+              <img class="photo-card__image-desktop" src="img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="guitars">
+            </a>
+            <blockquote class="photo-card__quote">
+              <cite class="photo-card__author"><b class="photo-card__author-name">Антон</b> (12 часов назад)</cite>
+              <p class="photo-card__text">Соседи будут рады!</p>
+              <button class="photo-card__heart" aria-label="Поставить лайк"></button>
+              <span class="photo-card__like">Нравится: 666</span>
+            </blockquote>
+          </div>
+          <div class="photo__card photo-card">
+            <a class="photo-card__image" href="#">
+              <img class="photo-card__image-mobile" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="sky">
+              <img class="photo-card__image-tablet" src="img/photo-window-tablet@1x.jpg" width="300" height="300" alt="sky">
+              <img class="photo-card__image-desktop" src="img/photo-window-desktop@1x.jpg" width="300" height="400" alt="sky">
+            </a>
+            <blockquote class="photo-card__quote">
+              <cite class="photo-card__author"><b class="photo-card__author-name">Борис</b> (20 часов назад)</cite>
+              <p class="photo-card__text photo-card__text--position">Здесь могла быть ваша цитата о высоком и вечном</p>
+              <button class="photo-card__heart" aria-label="Поставить лайк"></button>
+              <span class="photo-card__like">Нравится: 215</span>
+            </blockquote>
+          </div>
+          <div class="photo__card photo-card">
+            <a class="photo-card__image" href="#">
+              <img class="photo-card__image-mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="kuban melon">
+              <img class="photo-card__image-tablet" src="img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="kuban melon">
+              <img class="photo-card__image-desktop" src="img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="kuban melon">
+            </a>
+            <blockquote class="photo-card__quote">
+              <cite class="photo-card__author"><b class="photo-card__author-name">Сергей</b> (25 часов назад)</cite>
+              <p class="photo-card__text">Самая кубанская в мире!</p>
+              <button class="photo-card__heart" aria-label="Поставить лайк"></button>
+              <span class="photo-card__like">Нравится: 4</span>
+            </blockquote>
+          </div>
+          <div class="photo__card photo-card">
+            <a class="photo-card__image" href="#">
+              <img class="photo-card__image-mobile" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="mountains">
+              <img class="photo-card__image-tablet" src="img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="mountains">
+              <img class="photo-card__image-desktop" src="img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="mountains">
+            </a>
+            <blockquote class="photo-card__quote">
+              <cite class="photo-card__author"><b class="photo-card__author-name">Максим</b> (40 часов назад)</cite>
+              <p class="photo-card__text">Где снег-то?</p>
+              <button class="photo-card__heart" aria-label="Поставить лайк"></button>
+              <span class="photo-card__like">Нравится: 150</span>
+            </blockquote>
+          </div>
+          <div class="photo__card photo-card">
+            <a class="photo-card__image" href="#">
+              <img class="photo-card__image-mobile" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="plane">
+              <img class="photo-card__image-tablet" src="img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="plane">
+              <img class="photo-card__image-desktop" src="img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="plane">
+            </a>
+            <blockquote class="photo-card__quote">
+              <cite class="photo-card__author"><b class="photo-card__author-name">Надежда</b> (45 часов назад)</cite>
+              <p class="photo-card__text">Всем GM и взаимные лайки!</p>
+              <button class="photo-card__heart" aria-label="Поставить лайк"></button>
+              <span class="photo-card__like">Нравится: 2560</span>
+            </blockquote>
+          </div>
+        </div>
       </section>
 
       <section class="panel-editing">
