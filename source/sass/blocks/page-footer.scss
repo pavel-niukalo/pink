@@ -8,6 +8,11 @@
 
 @media (min-width: 660px) {
   .page-footer {
+    display: block;
+  }
+
+  .page-footer__wrapper {
     display: flex;
+    justify-content: space-between;
   }
 }

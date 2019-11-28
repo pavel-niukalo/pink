@@ -4,9 +4,12 @@
   text-align: left;
 }
 
+// Заменю на picture и уберу эти классы после лекции
 .photo-card__image-mobile {
   &--panorama {
-    margin-left: -20px;
+    width: 100%;
+
+    object-fit: cover;
   }
 }
 
@@ -74,7 +77,9 @@
     display: block;
 
     &--panorama {
-      margin-left: -40px;
+      width: 100%;
+
+      object-fit: cover;
     }
   }
 
@@ -134,7 +139,9 @@
     display: block;
 
     &--panorama {
-      margin-left: -130px;
+      width: 100%;
+
+      object-fit: cover;
     }
   }
 

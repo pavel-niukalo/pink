@@ -8,15 +8,9 @@
   background-repeat: no-repeat;
 }
 
-.page-header__wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 320px;
-}
-
 .page-header__logo {
   display: block;
-  padding: 22px 0 25px 20px;
+  padding: 22px 0 24px 0;
   width: 75px;
   height: 22px;
 }
@@ -34,10 +28,6 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center 255px;
     background-size: auto;
-  }
-
-  .page-header__wrapper {
-    width: 660px;
   }
 
   .page-header__logo-mobile {
@@ -63,14 +53,12 @@
     background-size: auto;
   }
 
-  .page-header__wrapper {
-    width: 960px;
+  .page-header__nav {
+    background-color: rgba($black, 0.3);
   }
 
   .page-header__wrapper-nav {
     display: flex;
-
-    background-color: rgba($black, 0.3);
   }
 
   .page-header__logo-mobile {
@@ -86,7 +74,7 @@
   }
 
   .page-header__logo {
-    padding: 27px 0 43px 10px;
+    padding: 27px 0 43px 1px;
     width: 147px;
     height: 40px;
 
