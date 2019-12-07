@@ -4,7 +4,7 @@
 
 .page-title__text {
   padding: 0;
-  padding-top: 31px;
+  padding-top: 30px;
   margin: 0 auto;
   width: 168px;
 
@@ -13,7 +13,7 @@
   font-weight: 300;
 
   &--photo {
-    padding-bottom: 83px;
+    padding-bottom: 82px;
   }
 
   &--form {
@@ -24,7 +24,7 @@
 
 @media (min-width: 660px) {
   .page-title__text {
-    padding-top: 72px;
+    padding-top: 69px;
 
     font-size: 50px;
     line-height: 60px;
@@ -32,11 +32,10 @@
     width: 356px;
 
     &--photo {
-      padding-bottom: 139px;
+      padding-bottom: 140px;
     }
 
     &--form {
-      padding-top: 71px;
       padding-bottom: 80px;
       width: 474px;
     }

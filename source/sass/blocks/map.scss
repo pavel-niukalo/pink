@@ -1,0 +1,45 @@
+.map {
+  margin-top: -410px;
+}
+
+.map__tablet,
+.map__desktop {
+  display: none;
+}
+
+.map img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+// Для ПП
+@media (min-width: 660px) {
+  .map {
+    margin-top: -322px;
+  }
+
+  .map__mobile,
+  .map__desktop {
+    display: none;
+  }
+
+  .map__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .map {
+    margin-top: -273px;
+  }
+
+  .map__mobile,
+  .map__tablet {
+    display: none;
+  }
+
+  .map__desktop {
+    display: block;
+  }
+}
