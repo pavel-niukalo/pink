@@ -19,7 +19,6 @@
 
   text-align: center;
 
-  // box-shadow: 0 1px 0 0 $black, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid $black;
   border-top: 1px solid $nav-white;
 }
@@ -52,6 +51,8 @@
 
 @media (min-width: 960px) {
   .site-list {
+    margin: 0;
+
     line-height: 18px;
     font-weight: 400;
     text-transform: none;

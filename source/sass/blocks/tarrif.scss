@@ -191,6 +191,7 @@
 
   .tarrif__set {
     padding: 7px 25px 8px 14px;
+    min-width: 112px;
 
     line-height: 30px;
     text-transform: none;
@@ -256,7 +257,8 @@
   }
 
   .tarrif__set {
-    padding: 14px 64px 15px 23px;
+    padding: 14px 45px 15px 23px;
+    min-width: 166px;
 
     font-size: 18px;
   }

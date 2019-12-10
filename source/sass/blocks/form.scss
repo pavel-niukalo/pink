@@ -1,7 +1,7 @@
 .form__mobile-wrapper {
+  padding: 0 20px;
   margin: 0 auto;
-  margin-bottom: -15px;
-  width: 280px;
+  max-width: 280px;
 
   &--checkbox,
   &--radio {
@@ -9,7 +9,6 @@
     flex-direction: column;
 
     padding-top: 78px;
-    margin-bottom: -5px;
   }
 
   &--radio {
@@ -18,8 +17,7 @@
   }
 
   &--contacts {
-    margin-top: 32px;
-    margin-bottom: -13px;
+    padding-top: 32px;
   }
 
   &--textarea {
@@ -109,6 +107,19 @@
   }
 }
 
+.form__input {
+  margin-top: 5px;
+  margin-bottom: 17px;
+}
+
+.form__mobile-wrapper--user .form__wrapper:nth-last-child(1) {
+  margin-bottom: -15px;
+}
+
+.form__mobile-wrapper--contacts .form__wrapper:nth-last-child(1) {
+  margin-bottom: -13px;
+}
+
 .form__number,
 .form__mail {
   display: none;
@@ -125,13 +136,12 @@
   margin-bottom: 52px;
 }
 
-.form__radio {
-  margin-bottom: 45px;
+.form__mobile-wrapper--checkbox .form__checkbox:nth-last-child(1) {
+  margin-bottom: 47px;
 }
 
-.form__input {
-  margin-top: 5px;
-  margin-bottom: 17px;
+.form__radio {
+  margin-bottom: 45px;
 }
 
 .form__emotions {
@@ -148,40 +158,107 @@
     flex-wrap: wrap;
   }
 
-  .form__mobile-wrapper {
-    margin-right: -4px;
-    margin-bottom: -9px;
-    width: 620px;
+  .form__fieldset {
+    min-width: 100%;
 
-    &--checkbox {
-      padding-top: 27px;
-      margin-bottom: 1px;
+    border: 2px solid $grey;
+
+    &--user {
+      border: none;
+
+      order: -5;
     }
 
     &--radio {
       padding-top: 29px;
       padding-bottom: 14px;
+      margin-top: 6px;
       margin-bottom: 0;
+      min-width: calc(100% - 4px);
+
+      order: -4;
     }
 
     &--contacts {
+      box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
 
-      margin-top: 37px;
+      padding-top: 37px;
+      padding-left: 58px;
+      margin-top: 57px;
+
+      order: -3;
+    }
+
+    &--check {
+      padding-top: 27px;
+      padding-bottom: 6px;
+      margin-top: 35px;
+      min-width: calc(100% - 4px);
+
+      order: -2;
     }
 
     &--textarea {
       padding-top: 29px;
-      margin-bottom: 44px;
+      padding-bottom: 44px;
+      margin-top: 49px;
+      min-width: calc(100% - 4px);
+
+      order: -1;
+    }
+
+    &--grey {
+      background-color: $white;
+    }
+  }
+
+  .form__mobile-wrapper {
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+  }
+
+  .form__legend {
+    top: 78px;
+    left: -1px;
+
+    &--checkbox {
+      top: 22px;
+
+      padding-bottom: 43px;
+      width: 432px;
+    }
+
+    &--contacts {
+      top: 0;
+
+      display: block;
+      width: 256px;
+    }
+
+    &--radio {
+      top: 20px;
+
+      padding-bottom: 39px;
+      width: 364px;
+    }
+
+    &--textarea {
+      top: 8px;
+
+      width: 258px;
     }
   }
 
   .form__mobile-wrapper--contacts .form__wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
 
-    padding-left: 58px;
+  .form__mobile-wrapper--contacts .form__wrapper:nth-last-child(1) {
+    margin-bottom: -9px;
   }
 
   .form__mobile-wrapper--contacts .form__text {
@@ -222,7 +299,7 @@
   .form__number,
   .form__mail {
     position: absolute;
-    right: 62px;
+    right: 58px;
 
     display: block;
     width: 62px;
@@ -240,74 +317,6 @@
 
   .form__mail {
     background-image: url("../img/icon-mail.svg");
-  }
-
-  .form__fieldset {
-    border: 2px solid $grey;
-
-    &--user {
-      border: none;
-
-      order: -5;
-    }
-
-    &--radio {
-      order: -4;
-    }
-
-    &--contacts {
-      margin-top: 57px;
-
-      order: -3;
-    }
-
-    &--check {
-      margin-top: 35px;
-
-      order: -2;
-    }
-
-    &--textarea {
-      margin-top: 49px;
-
-      order: -1;
-    }
-
-    &--grey {
-      background-color: $white;
-    }
-  }
-
-  .form__legend {
-    top: 78px;
-    left: -1px;
-
-    &--checkbox {
-      top: 22px;
-
-      padding-bottom: 43px;
-      width: 432px;
-    }
-
-    &--contacts {
-      top: 0;
-
-      display: block;
-      width: 256px;
-    }
-
-    &--radio {
-      top: 20px;
-
-      padding-bottom: 39px;
-      width: 364px;
-    }
-
-    &--textarea {
-      top: 8px;
-
-      width: 258px;
-    }
   }
 
   .form__text {
@@ -345,39 +354,57 @@
 }
 
 @media (min-width: 960px) {
-  .form__mobile-wrapper {
-    margin-right: -4px;
-    margin-bottom: -9px;
-    width: 500px;
+  .form {
+    justify-content: space-between;
+  }
 
-    &--checkbox {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding-top: 27px;
-      padding-bottom: 7px;
-      margin-bottom: 1px;
-      width: 940px;
+  .form__fieldset {
+    min-width: 100%;
+
+    &--user {
+      margin-top: 29px;
+      min-width: 436px;
+
+      border: none;
     }
 
     &--radio {
       padding-top: 32px;
-      padding-bottom: 14px;
-      margin-bottom: 0;
-      width: 435px;
+      padding-bottom: 16px;
+      margin-top: 0;
+      margin-bottom: 33px;
+      min-width: 431px;
+    }
+
+    &--contacts {
+      padding-top: 34px;
+      padding-right: 57px;
+      padding-left: 58px;
+      margin-top: 24px;
+    }
+
+    &--check {
+      padding-bottom: 8px;
+      min-width: calc(100% - 4px);
+    }
+
+    &--textarea {
+      padding-top: 26px;
+      padding-bottom: 36px;
+      min-width: calc(100% - 4px);
+    }
+  }
+
+  .form__mobile-wrapper {
+    &--checkbox {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     &--contacts {
       display: flex;
       flex-wrap: wrap;
-
-      margin-top: 34px;
-      width: 940px;
-    }
-
-    &--textarea {
-      padding-top: 26px;
-      margin-bottom: 36px;
-      width: 940px;
+      justify-content: space-between;
     }
   }
 
@@ -420,16 +447,15 @@
   }
 
   .form__mobile-wrapper--contacts .form__wrapper {
-    padding-left: 58px;
-    width: 437px;
+    width: 376px;
+  }
 
-    &:nth-child(2) {
-      padding-left: 8px;
-    }
+  .form__mobile-wrapper--contacts .form__wrapper:nth-last-child(1) {
+    margin-bottom: 0;
   }
 
   .form__mobile-wrapper--contacts .form__text {
-    margin-bottom: 22px;
+    margin-bottom: 13px;
     margin-left: 20px;
   }
 
@@ -438,35 +464,9 @@
     width: 352px;
   }
 
-  .form__fieldset {
-    border: 2px solid $grey;
-
-    &--user {
-      margin-top: 29px;
-
-      border: none;
-    }
-
-    &--radio {
-      margin-left: 9px;
-      margin-bottom: 39px;
-    }
-
-    &--contacts {
-      margin-top: 18px;
-    }
-
-    &--check {
-      margin-top: 35px;
-    }
-
-    &--textarea {
-      margin-top: 49px;
-    }
-
-    &--grey {
-      background-color: $white;
-    }
+  .form__number,
+  .form__mail {
+    right: 1px;
   }
 
   .form__legend {
@@ -524,6 +524,7 @@
     padding-left: 19px;
     padding-bottom: 7px;
     margin-left: 58px;
+    margin-right: 45px;
     width: 795px;
     min-height: 103px;
   }
