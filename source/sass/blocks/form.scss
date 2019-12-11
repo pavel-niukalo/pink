@@ -185,6 +185,7 @@
       flex-wrap: wrap;
 
       padding-top: 37px;
+      padding-right: 58px;
       padding-left: 58px;
       margin-top: 57px;
 
@@ -281,7 +282,7 @@
     padding-left: 18px;
     margin-top: 0;
     margin-bottom: 10px;
-    width: 478px;
+    width: 100%;
 
     &--number {
       order: -3;
@@ -294,12 +295,18 @@
 
   .form__wrapper {
     position: relative;
+
+    &--user {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 
   .form__number,
   .form__mail {
     position: absolute;
-    right: 58px;
+    right: 0;
 
     display: block;
     width: 62px;
@@ -320,17 +327,13 @@
   }
 
   .form__text {
-    margin-right: 16px;
+    margin-right: 19px;
     margin-left: -1px;
   }
 
   .form__input {
     margin-bottom: 47px;
-    width: 500px;
-
-    &--long {
-      width: 541px;
-    }
+    width: 100%;
   }
 
   .form__checkbox,
@@ -363,7 +366,7 @@
 
     &--user {
       margin-top: 29px;
-      min-width: 436px;
+      min-width: 435px;
 
       border: none;
     }
@@ -504,11 +507,6 @@
 
   .form__input {
     margin-bottom: 48px;
-    width: 316px;
-
-    &--long {
-      width: 357px;
-    }
   }
 
   .form__checkbox,
