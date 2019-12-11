@@ -1,34 +1,60 @@
 .tarrif {
+  position: relative;
+
   background-color: $light-grey;
+
+  z-index: 1;
+}
+
+.tarrif__wrapper {
+  position: relative;
+  padding: 118px 0 99px 0;
+
+  overflow: hidden;
 }
 
 .tarrif__list {
+  margin-left: -321px;
+
   border-collapse: collapse;
 }
 
 .tarrif__type {
+  padding: 16px 90px 1px 90px;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .tarrif__price {
+  padding-left: 88px;
+  padding-bottom: 18px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+
+  border-bottom: 2px solid $dark-blue;
 }
 
 .tarrif__type,
 .tarrif__price {
   color: $white;
+  text-transform: uppercase;
 
   background-color: $dark-blue;
   border-right: 2px solid $grey;
   border-left: 2px solid $grey;
 }
 
+.tarrif__price p {
+  padding: 0;
+  margin: 0;
+}
+
 .tarrif__set {
+  text-align: left;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
@@ -37,8 +63,203 @@
 .tarrif__set,
 .tarrif__set-yes,
 .tarrif__set-no {
+  padding: 0;
+
   background-color: $white;
   border-right: 2px solid $grey;
   border-bottom: 2px solid $grey;
   border-left: 2px solid $grey;
+}
+
+.tarrif__set-yes {
+  position: relative;
+
+  background-image: url("../img/icon-yes.svg");
+  background-position: 230px center;
+  background-repeat: no-repeat;
+  background-size: 31px 21px;
+}
+
+.tarrif__set-no {
+  position: relative;
+
+  background-image: url("../img/icon-no.svg");
+  background-position: 228px center;
+  background-repeat: no-repeat;
+  background-size: 31px 27px;
+}
+
+.tarrif__set-pink {
+  &::before {
+    content: "Розовый фильтр";
+  }
+}
+
+.tarrif__set-smile {
+  &::before {
+    content: "Смайлики";
+  }
+}
+
+.tarrif__set-com {
+  &::before {
+    content: "Комментарии";
+  }
+}
+
+.tarrif__set-pink,
+.tarrif__set-smile,
+.tarrif__set-com {
+  padding-bottom: 59px;
+
+  &::before {
+    position: absolute;
+    top: 15px;
+    left: 21px;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $dark-blue;
+  }
+}
+
+.tarrif__toggles {
+  position: absolute;
+  bottom: 43px;
+  left: 132px;
+
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 660px) {
+  .tarrif__toggles {
+    display: none;
+  }
+
+  .tarrif__list {
+    margin-left: 1px;
+  }
+
+  .tarrif__wrapper {
+    box-sizing: border-box;
+    padding: 95px 20px 68px 20px;
+    margin: 0 auto;
+    max-width: 660px;
+  }
+
+  .tarrif__type {
+    padding: 12px 0 0 2px;
+    width: 150px;
+
+    font-size: 16px;
+    text-align: center;
+
+    &--left {
+      border-left: 2px solid $dark-blue;
+    }
+
+    &--right {
+      width: 151px;
+
+      border-right: 2px solid $dark-blue;
+    }
+  }
+
+  .tarrif__price {
+    padding-left: 2px;
+    padding-bottom: 14px;
+
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+
+    &--left {
+      border-left: 2px solid $dark-blue;
+    }
+
+    &--center {
+      padding-left: 1px;
+    }
+
+    &--right {
+      border-right: 2px solid $dark-blue;
+    }
+  }
+
+  .tarrif__set {
+    padding: 7px 25px 8px 14px;
+    min-width: 112px;
+
+    line-height: 30px;
+    text-transform: none;
+
+    &--border {
+      border-top: 2px solid $grey;
+    }
+  }
+
+  .tarrif__set-yes {
+    padding: 0;
+
+    background-image: url("../img/icon-yes.svg");
+    background-position: center;
+  }
+
+  .tarrif__set-no {
+    padding: 0;
+
+    background-image: url("../img/icon-no.svg");
+    background-position: center;
+  }
+
+  .tarrif__set-pink,
+  .tarrif__set-smile,
+  .tarrif__set-com {
+    &::before {
+      content: "";
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .tarrif__wrapper {
+    padding: 129px 10px 95px 10px;
+    max-width: 960px;
+  }
+
+  .tarrif__list {
+    margin-left: -1px;
+  }
+
+  .tarrif__type {
+    padding: 16px 0 6px 2px;
+    width: 231px;
+
+    font-size: 18px;
+
+    &--center {
+      padding-left: 1px;
+    }
+  }
+
+  .tarrif__price {
+    padding-left: 4px;
+    padding-bottom: 23px;
+
+    font-size: 24px;
+
+    &--center {
+      padding-left: 1px;
+    }
+  }
+
+  .tarrif__set {
+    padding: 14px 45px 15px 23px;
+    min-width: 166px;
+
+    font-size: 18px;
+  }
 }
