@@ -1,5 +1,23 @@
 .map {
+  position: relative;
+
   margin-top: -410px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 77px;
+    left: 142px;
+
+    display: block;
+    width: 36px;
+    height: 36px;
+
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .map__tablet,
@@ -17,6 +35,11 @@
 @media (min-width: 660px) {
   .map {
     margin-top: -322px;
+
+    &::after {
+      bottom: 272px;
+      left: 312px;
+    }
   }
 
   .map__mobile,
@@ -32,6 +55,11 @@
 @media (min-width: 960px) {
   .map {
     margin-top: -273px;
+
+    &::after {
+      bottom: 400px;
+      left: 582px;
+    }
   }
 
   .map__mobile,

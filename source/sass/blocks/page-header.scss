@@ -4,8 +4,24 @@
   background-color: $dark-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 259px;
-  background-size: cover;
+  background-size: 100% 462px, cover;
   background-repeat: no-repeat;
+}
+
+.page-header--closed {
+  background-position: center 0;
+}
+
+.page-header--opened {
+  background-position: center 259px;
+}
+
+.page-header--closed .page-header__nav {
+  background-color: $nav;
+}
+
+.page-header--opened .page-header__nav {
+  background-color: $dark-blue;
 }
 
 .page-header__logo {
@@ -13,6 +29,23 @@
   padding: 22px 0 25px 0;
   width: 75px;
   height: 22px;
+
+  &:hover path,
+  &:focus path {
+    fill: $pink;
+  }
+
+  &:active path {
+    fill: $down-post;
+  }
+}
+
+.page-header--closed .page-header__logo {
+  padding-bottom: 23px;
+}
+
+.page-header--opened .page-header__logo {
+  padding-bottom: 25px;
 }
 
 .page-header__logo-tablet {
@@ -30,6 +63,10 @@
     background-size: auto;
   }
 
+  .page-header--closed {
+    background-position: center 0;
+  }
+
   .page-header__logo-mobile {
     display: none;
   }
@@ -40,9 +77,18 @@
 
   .page-header__logo {
     padding-top: 27px;
-    padding-bottom: 42px;
     width: 147px;
     height: 40px;
+  }
+
+  .page-header--opened .page-header__logo,
+  .page-header__logo {
+    padding-bottom: 42px;
+  }
+
+  .page-header--closed .page-header__logo {
+    padding-bottom: 43px;
+    margin-bottom: 1px;
   }
 }
 
@@ -53,10 +99,14 @@
     background-size: auto;
   }
 
+  .page-header--opened .page-header__nav,
+  .page-header--closed .page-header__nav,
   .page-header__nav {
-    background-color: rgba($black, 0.3);
+    background-color: $nav;
   }
 
+  .page-header--opened .page-header__wrapper-nav,
+  .page-header--closed .page-header__wrapper-nav,
   .page-header__wrapper-nav {
     display: flex;
   }
@@ -77,14 +127,9 @@
     padding: 27px 0 43px 1px;
     width: 147px;
     height: 40px;
+  }
 
-    &:hover path,
-    &:focus path {
-      fill: $pink;
-    }
-
-    &:active path {
-      fill: $down-post;
-    }
+  .page-header--closed .page-header__logo {
+    margin-bottom: 0;
   }
 }
