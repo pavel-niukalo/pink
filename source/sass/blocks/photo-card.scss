@@ -30,6 +30,31 @@
   }
 }
 
+.photo-card__quote--panorama {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+
+    position: absolute;
+    top: -137px;
+    right: 0;
+
+    padding-top: 6px;
+    width: 140px;
+    height: 30px;
+
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+
+    background-color: $pink;
+  }
+}
+
 .photo-card__author {
   font-size: 12px;
   font-style: normal;
@@ -55,6 +80,26 @@
 
   &--padding {
     padding-bottom: 8px;
+  }
+}
+
+.photo-card__heart {
+  position: relative;
+  top: 1px;
+
+  margin-right: 4px;
+  width: 13px;
+  height: 12px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: none;
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -91,11 +136,15 @@
     padding: 24px 0 21px 27px;
     margin-top: 0;
     min-height: 110px;
+  }
 
-    &--panorama {
-      padding: 23px 0 16px 27px;
-      margin: 0;
-      min-height: 81px;
+  .photo-card__quote--panorama {
+    padding: 23px 0 16px 27px;
+    margin: 0;
+    min-height: 81px;
+
+    &::before {
+      top: -452px;
     }
   }
 
@@ -107,13 +156,13 @@
 
   .photo-card__heart {
     position: absolute;
-    bottom: 31px;
-    right: 30px;
+    top: 114px;
+    right: 28px;
 
     &--panorama {
       position: absolute;
-      right: 27px;
-      bottom: 82px;
+      top: 30px;
+      right: 25px;
     }
   }
 
@@ -165,8 +214,8 @@
 
   .photo-card__heart {
     &--panorama {
-      right: 30px;
-      bottom: 59px;
+      top: 30px;
+      right: 28px;
     }
   }
 

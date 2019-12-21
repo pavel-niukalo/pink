@@ -49,14 +49,6 @@
   }
 
   .photo__list-card .photo__card {
-    // &:nth-child(2n) {
-    //   margin-left: 0;
-    // }
-
-    // &:nth-child(3n) {
-    //   margin-right: 0;
-    // }
-
     &:nth-child(n+4) {
       margin-top: 54px;
     }

@@ -59,7 +59,7 @@
   &:hover path:nth-child(2),
   &:focus path:nth-child(2),
   &:hover rect,
-  &:focus rect, {
+  &:focus rect {
     fill: $button-hover;
   }
 
@@ -76,6 +76,11 @@
   &:focus path {
     fill: $button-hover;
   }
+}
+
+.editing__contrast path:hover,
+.editing__contrast path:focus {
+  fill: $button-hover;
 }
 
 .editing__crop,
