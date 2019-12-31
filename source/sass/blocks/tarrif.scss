@@ -69,10 +69,12 @@
 .tarrif__set-no {
   padding: 0;
 
-  background-color: $white;
+
   border-right: 2px solid $grey;
   border-bottom: 2px solid $grey;
   border-left: 2px solid $grey;
+
+  background-color: $white;
 }
 
 .tarrif__set-yes {

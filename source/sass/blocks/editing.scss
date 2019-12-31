@@ -100,6 +100,8 @@
 }
 
 .editing__scale {
+  appearance: none;
+
   position: absolute;
   bottom: 73px;
   left: 20px;
@@ -109,8 +111,68 @@
   width: 240px;
   height: 2px;
 
+  background-color: $dark-blue;
+
   &--active {
     display: block;
+  }
+
+  &:hover {
+    outline: none;
+  }
+}
+
+.editing__scale::-webkit-slider-thumb {
+  appearance: none;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: $light-grey;
+  border: 2px solid $pink;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $pink;
+  }
+}
+
+.editing__scale::-moz-range-thumb {
+  appearance: none;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: $light-grey;
+  border: 2px solid $pink;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $pink;
+  }
+}
+
+.editing__scale::-ms-thumb {
+  appearance: none;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: $light-grey;
+  border: 2px solid $pink;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $pink;
   }
 }
 
