@@ -96,6 +96,7 @@
 
   border: solid 2px $grey;
   border-radius: 2px;
+  box-shadow: none;
 
   &:hover,
   &:focus {
@@ -316,6 +317,8 @@
 
     background-repeat: no-repeat;
     background-position: center;
+
+    z-index: 2;
   }
 
   .form__number {
