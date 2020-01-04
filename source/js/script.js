@@ -3,9 +3,9 @@ var header = document.querySelector(".page-header");
 var nav = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
 
-header.classList.add("page-header--closed");
 nav.classList.remove("main-nav--nojs");
 nav.classList.add("main-nav--closed");
+header.classList.add("page-header--closed");
 
 navToggle.addEventListener("click", function() {
   if (nav.classList.contains("main-nav--closed")) {

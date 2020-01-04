@@ -103,9 +103,11 @@
         <section class="promo">
           <h1 class="visually-hidden">Пинк - раскрасьте серые будни</h1>
           <p class="promo__slogan">Взгляните на жизнь иначе!</p>
-          <img class="promo__image-mobile" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="example">
-          <img class="promo__image-tablet" src="img/iphone-hand-tablet2@1x.png" width="517" height="544" alt="example">
-          <img class="promo__image-desktop" src="img/iphone-hand-desktop2@1x.png" width="680" height="645" alt="example">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop2@2x.png 2x, img/iphone-hand-desktop2@1x.png 1x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet2@2x.png 2x, img/iphone-hand-tablet2@1x.png 1x">
+            <img class="promo__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="example">
+          </picture>
 
           <div class="promo__download">
             <a class="promo__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
