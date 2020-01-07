@@ -36,13 +36,16 @@
   width: 75px;
   height: 22px;
 
-  &:hover path,
-  &:focus path {
-    fill: $pink;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+    // У SVG стоит currentColor
   }
 
-  &:active path {
-    fill: $down-post;
+  &:active {
+    color: $down-post;
   }
 }
 

@@ -41,6 +41,8 @@
   width: 22px;
   height: 41px;
 
+  color: $down-link;
+
   background-color: transparent;
   border: none;
 
@@ -52,17 +54,14 @@
     right: 10px;
   }
 
-  path {
-    fill: $down-link;
+  &:hover,
+  &:focus {
+    color: $slider-toggle;
+    // У SVG стоит currentColor
   }
 
-  &:hover path,
-  &:focus path {
-    fill: $slider-toggle;
-  }
-
-  &:active path {
-    fill: $down-cancel;
+  &:active {
+    color: $down-cancel;
   }
 }
 
