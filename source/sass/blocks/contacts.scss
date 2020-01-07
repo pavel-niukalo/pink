@@ -1,13 +1,18 @@
 .contacts__link {
   display: block;
 
-  &:hover path,
-  &:focus path {
-    fill: $pink;
+  color: $dark-blue;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+    // У SVG стоит currentColor
   }
 
-  &:active path {
-    fill: $down-link;
+  &:active {
+    opacity: 0.3;
+
+    color: $dark-blue;
   }
 }
 

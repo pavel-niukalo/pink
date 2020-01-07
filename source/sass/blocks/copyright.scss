@@ -18,13 +18,16 @@
   width: 27px;
   height: 34px;
 
-  &:hover path,
-  &:focus path {
-    fill: $dark-blue;
+  color: $pink;
+
+  &:hover,
+  &:focus {
+    color: $dark-blue;
+    // У SVG стоит currentColor
   }
 
-  &:active path {
-    fill: $down-link;
+  &:active {
+    color: $down-link;
   }
 }
 
