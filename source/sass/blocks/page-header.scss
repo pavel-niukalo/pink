@@ -31,6 +31,9 @@
 }
 
 .page-header__logo {
+  position: relative;
+  left: 20px;
+
   display: block;
   padding: 22px 0 25px 0;
   width: 75px;
@@ -50,7 +53,7 @@
 }
 
 .page-header--closed .page-header__logo {
-  padding-bottom: 23px;
+  padding-bottom: 22px;
 }
 
 .page-header--opened .page-header__logo {
@@ -124,6 +127,13 @@
     }
   }
 
+  .page-header__wrapper-nav {
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
   .page-header--opened .page-header__nav,
   .page-header--closed .page-header__nav,
   .page-header__nav {
@@ -149,6 +159,8 @@
   }
 
   .page-header__logo {
+    left: 0;
+
     padding: 27px 0 43px 1px;
     width: 147px;
     height: 40px;

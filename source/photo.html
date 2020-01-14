@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -153,28 +153,28 @@
 
     <header class="page-header">
       <nav class="page-header__nav">
-        <div class="page-header__wrapper-nav container">
+        <div class="page-header__wrapper-nav">
           <a href="index.html" class="page-header__logo">
-            <svg class="page-header__logo-mobile" width="75px" height="22px">
+            <svg class="page-header__logo-mobile" width="75" height="22">
               <use xlink:href="#header-logo-mobile"></use>
             </svg>
 
-            <svg class="page-header__logo-tablet" width="147px" height="40px">
+            <svg class="page-header__logo-tablet" width="147" height="40">
               <use xlink:href="#header-logo-tablet"></use>
             </svg>
 
-            <svg class="page-header__logo-desktop" width="147px" height="40px">
+            <svg class="page-header__logo-desktop" width="147" height="40">
               <use xlink:href="#header-logo-desktop"></use>
             </svg>
           </a>
 
           <nav class="main-nav main-nav--nojs">
             <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-              <svg class="main-nav__burger" width="49px" height="24px">
+              <svg class="main-nav__burger" width="49" height="24">
                 <use xlink:href="#burger"></use>
               </svg>
 
-              <svg class="main-nav__cross" width="22px" height="23px">
+              <svg class="main-nav__cross" width="22" height="23">
                 <use xlink:href="#cross"></use>
               </svg>
             </button>
@@ -369,37 +369,43 @@
               <div class="editing__tools-wrapper">
                 <div class="editing__icon-wrapper">
                   <button class="editing__icon editing__icon--active editing__crop" type="button" aria-label="Обрезать изображение">
-                    <svg class="editing__icon-mobile" width="48px" height="48px">
+                    <svg class="editing__icon-mobile" width="48" height="48">
                       <use xlink:href="#crop"></use>
                     </svg>
 
-                    <svg class="editing__icon-tablet" width="24px" height="22px">
+                    <svg class="editing__icon-tablet" width="24" height="22">
                       <use xlink:href="#crop"></use>
                     </svg>
                   </button>
-                  <input class="editing__scale editing__scale--active editing__scale--crop" type="range" value="26">
+                  <div class="editing__scale editing__scale--crop editing__scale--active">
+                    <button class="editing__thumb editing__thumb--crop" type="button" aria-label="Изменить значение обрезки"></button>
+                  </div>
 
                   <button class="editing__icon editing__fill" type="button" aria-label="Изменить заливку">
-                    <svg class="editing__icon-mobile" width="48px" height="48px">
+                    <svg class="editing__icon-mobile" width="48" height="48">
                       <use xlink:href="#fill"></use>
                     </svg>
 
-                    <svg class="editing__icon-tablet" width="24px" height="22px">
+                    <svg class="editing__icon-tablet" width="24" height="22">
                       <use xlink:href="#fill"></use>
                     </svg>
                   </button>
-                  <input class="editing__scale editing__scale--fill" type="range" value="90">
+                  <div class="editing__scale editing__scale--fill">
+                    <button class="editing__thumb editing__thumb--fill" type="button" aria-label="Изменить значение обрезки"></button>
+                  </div>
 
                   <button class="editing__icon editing__contrast" type="button" aria-label="Изменить контрастность">
-                    <svg class="editing__icon-mobile" width="32px" height="32px">
+                    <svg class="editing__icon-mobile" width="32" height="32">
                       <use xlink:href="#contrast"></use>
                     </svg>
 
-                    <svg class="editing__icon-tablet" width="16px" height="16px">
+                    <svg class="editing__icon-tablet" width="16" height="16">
                       <use xlink:href="#contrast"></use>
                     </svg>
                   </button>
-                  <input class="editing__scale editing__scale--contrast" type="range" value="59">
+                  <div class="editing__scale editing__scale--contrast">
+                    <button class="editing__thumb editing__thumb--contrast" type="button"></button>
+                  </div>
                 </div>
 
                 <button class="editing__post" type="submit">Запостить</button>
@@ -415,11 +421,11 @@
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo contacts">
           <a href="index.html" class="contacts__link">
-            <svg class="contacts__logo-mobile" width="147px" height="40px">
+            <svg class="contacts__logo-mobile" width="147" height="40">
               <use xlink:href="#footer-logo-mobile"></use>
             </svg>
 
-            <svg class="contacts__logo-desktop" width="147px" height="40px">
+            <svg class="contacts__logo-desktop" width="147" height="40">
               <use xlink:href="#footer-logo-desktop"></use>
             </svg>
           </a>
@@ -440,7 +446,7 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html academy">
-            <svg width="27px" height="34px">
+            <svg width="27" height="34">
               <use xlink:href="#academy"></use>
             </svg>
           </a>

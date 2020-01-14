@@ -1,3 +1,18 @@
+.tarrif__btn--one:checked ~ .tarrif__list {
+  transform: translateX(278px);
+  transition: 0.5s;
+}
+
+.tarrif__btn--two:checked ~ .tarrif__list {
+  transform: translateX(0);
+  transition: 0.5s;
+}
+
+.tarrif__btn--three:checked ~ .tarrif__list {
+  transform: translateX(-279px);
+  transition: 0.5s;
+}
+
 .tarrif {
   position: relative;
 
@@ -8,136 +23,78 @@
 
 .tarrif__wrapper {
   position: relative;
-  padding: 118px 0 99px 0;
+  padding: 118px 0 47px 0;
 
   overflow: hidden;
 }
 
-.tarrif__list {
-  margin-left: -321px;
-
-  border-collapse: collapse;
+.tarrif__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.tarrif__type {
-  padding: 16px 90px 1px 90px;
+.tarrif__btn {
+  display: none;
+}
+
+.tarrif__list {
+  box-sizing: border-box;
+
+  width: 840px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tarrif__head {
+  background-color: $dark-blue;
+}
+
+.tarrif__value {
+  position: relative;
+
+  box-sizing: border-box;
+
+  padding: 16px 2px 18px 0;
+  min-width: 278px;
 
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  text-transform: uppercase;
 
-  &--center {
-    position: relative;
+  color: $white;
+
+  border-left: 2px solid $grey;
+  border-bottom: 2px solid $dark-blue;
+
+  &--invisible {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+
+    font-size: 0;
+    line-height: 0;
+
+    background-color: transparent;
+
+    border-bottom: 2px solid $grey;
+  }
+
+  &:nth-child(2) {
+    border-left: 2px solid $dark-blue;
+  }
+
+  &:last-child {
+    border-right: 2px solid $dark-blue;
   }
 }
 
-.tarrif__price {
-  padding-left: 88px;
-  padding-bottom: 18px;
+.tarrif__value p {
+  margin: 2px 0 0 0;
 
   font-size: 24px;
-  line-height: 30px;
   font-weight: 300;
-
-  border-bottom: 2px solid $dark-blue;
-}
-
-.tarrif__type,
-.tarrif__price {
-  color: $white;
-  text-transform: uppercase;
-
-  background-color: $dark-blue;
-  border-right: 2px solid $grey;
-  border-left: 2px solid $grey;
-}
-
-.tarrif__price p {
-  padding: 0;
-  margin: 0;
-}
-
-.tarrif__set {
-  text-align: left;
-  line-height: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.tarrif__set,
-.tarrif__set-yes,
-.tarrif__set-no {
-  padding: 0;
-
-
-  border-right: 2px solid $grey;
-  border-bottom: 2px solid $grey;
-  border-left: 2px solid $grey;
-
-  background-color: $white;
-}
-
-.tarrif__set-yes {
-  position: relative;
-
-  background-image: url("../img/icon-yes.svg");
-  background-position: 230px center;
-  background-repeat: no-repeat;
-  background-size: 31px 21px;
-}
-
-.tarrif__set-no {
-  position: relative;
-
-  background-image: url("../img/icon-no.svg");
-  background-position: 228px center;
-  background-repeat: no-repeat;
-  background-size: 31px 27px;
-}
-
-.tarrif__set-pink {
-  &::before {
-    content: "Розовый фильтр";
-  }
-}
-
-.tarrif__set-smile {
-  &::before {
-    content: "Смайлики";
-  }
-}
-
-.tarrif__set-com {
-  &::before {
-    content: "Комментарии";
-  }
-}
-
-.tarrif__set-pink,
-.tarrif__set-smile,
-.tarrif__set-com {
-  padding-bottom: 59px;
-
-  &::before {
-    position: absolute;
-    top: 15px;
-    left: 21px;
-
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $dark-blue;
-  }
-}
-
-.tarrif__toggles {
-  position: absolute;
-  bottom: 43px;
-  left: 132px;
-
-  padding: 0;
-  margin: 0;
 }
 
 .tarrif__hit {
@@ -155,7 +112,7 @@
 
 .tarrif__hit-text {
   position: absolute;
-  top: 2px;
+  top: 15px;
   left: 10px;
 
   font-size: 14px;
@@ -166,93 +123,87 @@
   transform: rotate(-45deg);
 }
 
+.tarrif__body {
+  background-color: $white;
+}
+
+.tarrif__set {
+  position: relative;
+
+  box-sizing: border-box;
+  padding: 14px 0 15px 22px;
+  min-height: 61px;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  border: 2px solid $grey;
+  border-top: none;
+
+  &--invisible {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+
+    font-size: 0;
+    line-height: 0;
+
+    background-color: $light-grey;
+
+    border: none;
+  }
+}
+
+.tarrif__yes {
+  position: absolute;
+  top: 19px;
+  right: 18px;
+}
+
+.tarrif__no {
+  position: absolute;
+  top: 14px;
+  right: 21px;
+}
+
+.tarrif__nav {
+  margin-top: 40px;
+}
+
 @media (min-width: 660px) {
-  .tarrif__toggles {
-    display: none;
+  .tarrif__wrapper {
+    padding: 95px 0 68px 0;
   }
 
   .tarrif__list {
-    margin-left: 1px;
+    width: 618px;
+
+    transform: none;
   }
 
-  .tarrif__wrapper {
-    box-sizing: border-box;
-    padding: 95px 20px 68px 20px;
-    margin: 0 auto;
-    max-width: 660px;
-  }
-
-  .tarrif__type {
-    padding: 12px 0 0 2px;
-    width: 150px;
+  .tarrif__value {
+    padding: 12px 7px 8px 7px;
+    min-width: 0;
 
     font-size: 16px;
-    text-align: center;
 
-    &--left {
-      border-left: 2px solid $dark-blue;
+    &--invisible {
+      background-color: $light-grey;
+
+      border: none;
+      border-bottom: 2px solid $grey;
     }
 
-    &--right {
-      width: 151px;
-
-      border-right: 2px solid $dark-blue;
+    &:last-child {
+      min-width: 155px;
     }
   }
 
-  .tarrif__price {
-    padding-left: 2px;
-    padding-bottom: 14px;
+  .tarrif__value p {
+    margin: -3px 0 0 0;
 
     font-size: 18px;
-    line-height: 20px;
-    text-align: center;
-
-    &--left {
-      border-left: 2px solid $dark-blue;
-    }
-
-    &--center {
-      padding-left: 1px;
-    }
-
-    &--right {
-      border-right: 2px solid $dark-blue;
-    }
-  }
-
-  .tarrif__set {
-    padding: 7px 25px 8px 14px;
-    min-width: 112px;
-
-    line-height: 30px;
-    text-transform: none;
-
-    &--border {
-      border-top: 2px solid $grey;
-    }
-  }
-
-  .tarrif__set-yes {
-    padding: 0;
-
-    background-image: url("../img/icon-yes.svg");
-    background-position: center;
-  }
-
-  .tarrif__set-no {
-    padding: 0;
-
-    background-image: url("../img/icon-no.svg");
-    background-position: center;
-  }
-
-  .tarrif__set-pink,
-  .tarrif__set-smile,
-  .tarrif__set-com {
-    &::before {
-      content: "";
-    }
   }
 
   .tarrif__hit {
@@ -265,61 +216,115 @@
   }
 
   .tarrif__hit-text {
-    top: -6px;
+    top: 8px;
     left: 7px;
+  }
+
+  .tarrif__set {
+    padding: 7px 15px 8px 15px;
+    min-width: 154px;
+    min-height: 45px;
+
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+
+    border: 2px solid $grey;
+    border-top: none;
+
+    &--yes,
+    &--no {
+      font-size: 0;
+      line-height: 0;
+    }
+
+    &--invisible {
+      min-width: 155px;
+
+      background-color: $white;
+    }
+  }
+
+  .tarrif__yes {
+    top: 13px;
+    right: 59px;
+  }
+
+  .tarrif__no {
+    position: absolute;
+    top: 8px;
+    right: 62px;
+  }
+
+  .tarrif__nav {
+    display: none;
   }
 }
 
 @media (min-width: 960px) {
   .tarrif__wrapper {
-    padding: 149px 10px 95px 10px;
-    max-width: 960px;
+    padding: 149px 0 95px 0;
   }
 
   .tarrif__list {
-    margin-left: -1px;
+    width: 940px;
+
+    transform: none;
   }
 
-  .tarrif__type {
-    padding: 16px 0 6px 2px;
-    width: 231px;
+  .tarrif__value {
+    padding: 16px 7px 18px 7px;
+    min-width: 0;
 
     font-size: 18px;
-
-    &--center {
-      padding-left: 1px;
-    }
   }
 
-  .tarrif__price {
-    padding-left: 4px;
-    padding-bottom: 23px;
+  .tarrif__value p {
+    margin: 2px 0 0 0;
 
     font-size: 24px;
-
-    &--center {
-      padding-left: 1px;
-    }
-  }
-
-  .tarrif__set {
-    padding: 14px 45px 15px 23px;
-    min-width: 166px;
-
-    font-size: 18px;
   }
 
   .tarrif__hit {
-    left: 0;
-
-    width: 74px;
+    width: 73px;
     height: 73px;
 
     background-image: url("../img/bg-hit.svg");
   }
 
   .tarrif__hit-text {
-    top: 2px;
+    top: 16px;
     left: 10px;
+  }
+
+  .tarrif__set {
+    padding: 14px 0 15px 21px;
+    min-width: 155px;
+    min-height: 45px;
+
+    font-size: 18px;
+
+    border: 2px solid $grey;
+    border-top: none;
+
+    &--yes,
+    &--no {
+      font-size: 0;
+      line-height: 0;
+    }
+
+    &--invisible {
+      max-width: 153px;
+    }
+  }
+
+  .tarrif__yes {
+    top: 22px;
+    right: 100px;
+  }
+
+  .tarrif__no {
+    top: 17px;
+    right: 103px;
   }
 }
