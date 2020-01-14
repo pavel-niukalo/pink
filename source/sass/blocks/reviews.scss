@@ -26,7 +26,7 @@
 
 .reviews__list {
   padding-top: 42px;
-  padding-bottom: 60px;
+  padding-bottom: 15px;
 
   text-align: center;
 }
@@ -91,13 +91,12 @@
   line-height: 30px;
 }
 
-.reviews__toggles {
-  position: absolute;
-  bottom: 11px;
-  left: 129px;
+.reviews__btn {
+  display: none;
+}
 
-  padding: 0;
-  margin: 0;
+.reviews__nav {
+  margin-top: 33px;
 }
 
 @media (min-width: 660px) {
@@ -138,11 +137,6 @@
   .reviews__text {
     font-size: 18px;
   }
-
-  .reviews__toggles {
-    bottom: 10px;
-    left: 299px;
-  }
 }
 
 @media (min-width: 960px) {
@@ -154,7 +148,7 @@
     }
   }
 
-  .reviews__toggles {
+  .reviews__nav {
     display: none;
   }
 

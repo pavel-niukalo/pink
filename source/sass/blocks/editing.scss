@@ -79,14 +79,11 @@
 }
 
 .editing__scale {
-  appearance: none;
-
   position: absolute;
   bottom: 73px;
   left: 20px;
 
   display: none;
-  margin: 0;
   width: 240px;
   height: 2px;
 
@@ -95,51 +92,15 @@
   &--active {
     display: block;
   }
-
-  &:hover {
-    outline: none;
-  }
 }
 
-.editing__scale::-webkit-slider-thumb {
-  appearance: none;
+.editing__thumb {
+  position: absolute;
+  right: 33px;
+  bottom: -6px;
 
-  width: 14px;
-  height: 14px;
-
-  background-color: $light-grey;
-  border: 2px solid $pink;
-  border-radius: 50%;
-
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $pink;
-  }
-}
-
-.editing__scale::-moz-range-thumb {
-  appearance: none;
-
-  width: 14px;
-  height: 14px;
-
-  background-color: $light-grey;
-  border: 2px solid $pink;
-  border-radius: 50%;
-
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $pink;
-  }
-}
-
-.editing__scale::-ms-thumb {
-  appearance: none;
-
+  padding: 0;
+  margin: 0;
   width: 14px;
   height: 14px;
 
@@ -236,7 +197,7 @@
     flex-wrap: wrap;
     align-content: center;
 
-    padding: 8px 0 38px 0;
+    padding: 9px 0 37px 0;
     width: 255px;
   }
 
@@ -298,24 +259,35 @@
     }
   }
 
-  .editing__contrast path {
-    fill: $pink;
-  }
-
   .editing__scale {
-    position: static;
+    position: relative;
+    bottom: 26px;
+    left: 0;
 
     display: block;
-    margin-top: -49px;
     margin-left: 7px;
     width: 202px;
 
     &--fill {
-      margin-top: -51px;
+      bottom: 27px;
     }
 
     &--contrast {
-      margin-top: -58px;
+      bottom: 30px;
+    }
+  }
+
+  .editing__thumb {
+    &--crop {
+      right: 42px;
+    }
+
+    &--fill {
+      left: 25px;
+    }
+
+    &--contrast {
+      right: 92px;
     }
   }
 
@@ -399,16 +371,31 @@
   }
 
   .editing__scale {
-    margin-top: -25px;
-    margin-left: 7px;
+    bottom: 13px;
+    left: 0;
+
     width: 288px;
 
     &--fill {
-      margin-top: -27px;
+      bottom: 14px;
     }
 
     &--contrast {
-      margin-top: -38px;
+      bottom: 19px;
+    }
+  }
+
+  .editing__thumb {
+    &--crop {
+      left: 71px;
+    }
+
+    &--fill {
+      left: 247px;
+    }
+
+    &--contrast {
+      right: 114px;
     }
   }
 

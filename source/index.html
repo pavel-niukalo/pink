@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -150,32 +150,42 @@
       <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
         <path fill="currentColor" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
       </symbol>
+
+      <!-- Галочка в таблице -->
+      <symbol id="yes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+        <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+      </symbol>
+
+      <!-- Крестик в таблице -->
+      <symbol id="no" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+        <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+      </symbol>
     </svg>
 
     <header class="page-header">
       <nav class="page-header__nav">
-        <div class="page-header__wrapper-nav container">
+        <div class="page-header__wrapper-nav">
           <a class="page-header__logo">
-            <svg class="page-header__logo-mobile" width="75px" height="22px">
+            <svg class="page-header__logo-mobile" width="75" height="22">
               <use xlink:href="#header-logo-mobile"></use>
             </svg>
 
-            <svg class="page-header__logo-tablet" width="147px" height="40px">
+            <svg class="page-header__logo-tablet" width="147" height="40">
               <use xlink:href="#header-logo-tablet"></use>
             </svg>
 
-            <svg class="page-header__logo-desktop" width="147px" height="40px">
+            <svg class="page-header__logo-desktop" width="147" height="40">
               <use xlink:href="#header-logo-desktop"></use>
             </svg>
           </a>
 
           <nav class="main-nav main-nav--nojs">
             <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-              <svg class="main-nav__burger" width="49px" height="24px">
+              <svg class="main-nav__burger" width="49" height="24">
                 <use xlink:href="#burger"></use>
               </svg>
 
-              <svg class="main-nav__cross" width="22px" height="23px">
+              <svg class="main-nav__cross" width="22" height="23">
                 <use xlink:href="#cross"></use>
               </svg>
             </button>
@@ -258,10 +268,10 @@
       <section class="effect">
         <div class="effect__wrapper container">
           <div class="effect__timer">
-            <svg class="effect__tablet" width="238px" height="276px">
+            <svg class="effect__tablet" width="238" height="276">
               <use xlink:href="#timer"></use>
             </svg>
-            <svg class="effect__deskrop" width="298px" height="345px">
+            <svg class="effect__deskrop" width="298" height="345">
               <use xlink:href="#timer-desktop"></use>
             </svg>
             <div class="effect__dial"></div>
@@ -279,24 +289,27 @@
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper container">
           <button class="reviews__arrow reviews__arrow--left">
-            <svg width="22px" height="41px">
+            <svg width="22" height="41">
               <use xlink:href="#arrow-left"></use>
             </svg>
           </button>
           <div class="reviews__list slider">
-            <blockquote class="reviews__quote slider__quote">
+            <input class="reviews__btn slider__input slider__input--one" id="reviews-radio-1" type="radio" name="sliderReviewsBtn" checked>
+            <input class="reviews__btn slider__input slider__input--two" id="reviews-radio-2" type="radio" name="sliderReviewsBtn">
+            <input class="reviews__btn slider__input slider__input--three" id="reviews-radio-3" type="radio" name="sliderReviewsBtn">
+            <blockquote class="reviews__quote">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__author-age">25 лет, водитель трамвая</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--active" type="button" aria-label="Посмотреть первый отзыв"></button>
-              <button class="slider__toggle" type="button" aria-label="Посмотреть второй отзыв"></button>
-              <button class="slider__toggle" type="button" aria-label="Посмотреть третий отзыв"></button>
-            </p>
+            <div class="reviews__nav slider__wrapper">
+              <label class="slider__toggle slider__toggle--one" for="reviews-radio-1" aria-label="Посмотреть базовый тариф"></label>
+              <label class="slider__toggle slider__toggle--two" for="reviews-radio-2" aria-label="Посмотреть стандартный тариф"></label>
+              <label class="slider__toggle slider__toggle--three" for="reviews-radio-3" aria-label="Посмотреть полный тариф"></label>
+            </div>
           </div>
           <button class="reviews__arrow reviews__arrow--right">
-            <svg width="22px" height="41px">
+            <svg width="22" height="41">
               <use xlink:href="#arrow-right"></use>
             </svg>
           </button>
@@ -305,77 +318,100 @@
 
       <section class="tarrif">
         <h2 class="visually-hidden">Варианты подписки</h2>
-        <div class="tarrif__wrapper slider">
-          <table class="tarrif__list">
-            <tr>
-              <th class="visually-hidden">Тариф</th>
-              <td class="tarrif__type tarrif__type--left">
-                <b>База</b>
-              </td>
-              <td class="tarrif__type tarrif__type--center">
-                <div class="tarrif__hit">
-                  <p class="tarrif__hit-text">Хит</p>
-                </div>
-                <b>Стандарт</b>
-              </td>
-              <td class="tarrif__type tarrif__type--right">
-                <b>Анлим</b>
-              </td>
-            </tr>
-            <tr>
-              <th class="visually-hidden">Цена</th>
-              <td class="tarrif__price tarrif__price--left">
-                <p>1,99 USD</p>
-              </td>
-              <td class="tarrif__price tarrif__price--center">
-                <p>3,99 USD</p>
-              </td>
-              <td class="tarrif__price tarrif__price--right">
-                <p>9,99 USD</p>
-              </td>
-            </tr>
-            <tr>
-              <th class="tarrif__set tarrif__set--border">Розовый фильтр</th>
-              <td class="tarrif__set-yes tarrif__set-pink">
-                <span class="visually-hidden">Да</span>
-              </td>
-              <td class="tarrif__set-yes tarrif__set-pink">
-                <span class="visually-hidden">Да</span>
-              </td>
-              <td class="tarrif__set-yes tarrif__set-pink">
-                <span class="visually-hidden">Да</span>
-              </td>
-            </tr>
-            <tr>
-              <th class="tarrif__set">Смайлики</th>
-              <td class="tarrif__set-no tarrif__set-smile">
-                <span class="visually-hidden">Нет</span>
-              </td>
-              <td class="tarrif__set-yes tarrif__set-smile">
-                <span class="visually-hidden">Да</span>
-              </td>
-              <td class="tarrif__set-yes tarrif__set-smile">
-                <span class="visually-hidden">Да</span>
-              </td>
-            </tr>
-            <tr>
-              <th class="tarrif__set">Комментарии</th>
-              <td class="tarrif__set-no tarrif__set-com">
-                <span class="visually-hidden">Нет</span>
-              </td>
-              <td class="tarrif__set-no tarrif__set-com">
-                <span class="visually-hidden">Нет</span>
-              </td>
-              <td class="tarrif__set-yes tarrif__set-com">
-                <span class="visually-hidden">Да</span>
-              </td>
-            </tr>
-          </table>
-          <p class="tarrif__toggles slider__toggles">
-            <button class="slider__toggle" type="button" aria-label="Посмотреть базовый тариф"></button>
-            <button class="slider__toggle slider__toggle--active" type="button" aria-label="Посмотреть стандартный тариф"></button>
-            <button class="slider__toggle slider__toggle--position" type="button" aria-label="Посмотреть полный тариф"></button>
-          </p>
+        <div class="tarrif__wrapper">
+          <div class="tarrif__items slider">
+            <input class="tarrif__btn tarrif__btn--one slider__input slider__input--one" id="tarrif-radio-1" type="radio" name="sliderBtn">
+            <input class="tarrif__btn tarrif__btn--two slider__input slider__input--two" id="tarrif-radio-2" type="radio" name="sliderBtn" checked>
+            <input class="tarrif__btn tarrif__btn--three slider__input slider__input--three" id="tarrif-radio-3" type="radio" name="sliderBtn">
+            <table class="tarrif__list">
+              <tr class="tarrif__head">
+                <th class="tarrif__value tarrif__value--invisible"></th>
+                <th class="tarrif__value">
+                  База
+                  <p>1,99 USD</p>
+                </th>
+                <th class="tarrif__value">
+                  Стандарт
+                  <p>3,99 USD</p>
+                  <div class="tarrif__hit">
+                    <span class="tarrif__hit-text">Хит</span>
+                  </div>
+                </th>
+                <th class="tarrif__value">
+                  Анлим
+                  <p>9,99 USD</p>
+                </th>
+              </tr>
+              <tr class="tarrif__body">
+                <td class="tarrif__set tarrif__set--invisible">Розовый фильтр</td>
+                <td class="tarrif__set tarrif__set--yes">
+                  Розовый фильтр
+                  <svg class="tarrif__yes" width="31" height="21">
+                    <use xlink:href="#yes"></use>
+                  </svg>
+                </td>
+                <td class="tarrif__set tarrif__set--yes">
+                  Розовый фильтр
+                  <svg class="tarrif__yes" width="31" height="21">
+                    <use xlink:href="#yes"></use>
+                  </svg>
+                </td>
+                <td class="tarrif__set tarrif__set--yes">
+                  Розовый фильтр
+                  <svg class="tarrif__yes" width="31" height="21">
+                    <use xlink:href="#yes"></use>
+                  </svg>
+                </td>
+              </tr>
+              <tr class="tarrif__body">
+                <td class="tarrif__set tarrif__set--invisible">Смайлики</td>
+                <td class="tarrif__set tarrif__set--no">
+                  Смайлики
+                  <svg class="tarrif__no" width="27" height="26">
+                    <use xlink:href="#no"></use>
+                  </svg>
+                </td>
+                <td class="tarrif__set tarrif__set--yes">
+                  Смайлики
+                  <svg class="tarrif__yes" width="31" height="21">
+                    <use xlink:href="#yes"></use>
+                  </svg>
+                </td>
+                <td class="tarrif__set tarrif__set--yes">
+                  Смайлики
+                  <svg class="tarrif__yes" width="31" height="21">
+                    <use xlink:href="#yes"></use>
+                  </svg>
+                </td>
+              </tr>
+              <tr class="tarrif__body">
+                <td class="tarrif__set tarrif__set--invisible">Комментарии</td>
+                <td class="tarrif__set tarrif__set--no">
+                  Комментарии
+                  <svg class="tarrif__no" width="27" height="26">
+                    <use xlink:href="#no"></use>
+                  </svg>
+                </td>
+                <td class="tarrif__set tarrif__set--no">
+                  Комментарии
+                  <svg class="tarrif__no" width="27" height="26">
+                    <use xlink:href="#no"></use>
+                  </svg>
+                </td>
+                <td class="tarrif__set tarrif__set--yes">
+                  Комментарии
+                  <svg class="tarrif__yes" width="31" height="21">
+                    <use xlink:href="#yes"></use>
+                  </svg>
+                </td>
+              </tr>
+            </table>
+            <div class="tarrif__nav slider__wrapper">
+              <label class="slider__toggle slider__toggle--one" for="tarrif-radio-1" aria-label="Посмотреть базовый тариф"></label>
+              <label class="slider__toggle slider__toggle--two" for="tarrif-radio-2" aria-label="Посмотреть стандартный тариф"></label>
+              <label class="slider__toggle slider__toggle--three" for="tarrif-radio-3" aria-label="Посмотреть полный тариф"></label>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -400,10 +436,7 @@
         </div>
       </section>
 
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.5075243794693!2d30.321652558284974!3d59.93736777281477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1577290360960!5m2!1sru!2sru" allowfullscreen="">
-        </iframe>
-
+      <div id="ymap" class="map">
         <picture>
           <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.webp 2x, img/bg-map-desktop@1x.webp 1x">
           <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 2x, img/bg-map-tablet@1x.webp 1x">
@@ -420,11 +453,11 @@
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo contacts">
           <a href="index.html" class="contacts__link">
-            <svg class="contacts__logo-mobile" width="147px" height="40px">
+            <svg class="contacts__logo-mobile" width="147" height="40">
               <use xlink:href="#footer-logo-mobile"></use>
             </svg>
 
-            <svg class="contacts__logo-desktop" width="147px" height="40px">
+            <svg class="contacts__logo-desktop" width="147" height="40">
               <use xlink:href="#footer-logo-desktop"></use>
             </svg>
           </a>
@@ -445,7 +478,7 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html academy">
-            <svg width="27px" height="34px">
+            <svg width="27" height="34">
               <use xlink:href="#academy"></use>
             </svg>
           </a>
@@ -455,5 +488,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?apikey=8520d0c4-6590-4cb7-b455-2a4a0f575897&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
