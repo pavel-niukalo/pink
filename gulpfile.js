@@ -12,6 +12,8 @@ var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
 
 
 gulp.task("css", function () {
@@ -45,6 +47,38 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("build/img"));
   });
 
+gulp.task("clean", function () {
+  return del("build");
+});
+
+gulp.task("copy", function () {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**",
+    "source/*.ico"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("uglify", function () {
+  return gulp.src("source/js/**/*.js", {
+    base: "source"
+    })
+    .pipe(uglify())
+    .pipe(gulp.dest("build"))
+});
+
+gulp.task("htmlmin", function () {
+  return gulp.src("source/*.html", {
+    base: "source"
+    })
+    .pipe(htmlmin())
+    .pipe(gulp.dest("build"))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -58,23 +92,6 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("clean", function () {
-  return del("build");
-})
-
-gulp.task("copy", function () {
-  return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.ico",
-    "source/*.html"
-  ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
-});
-
-gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp"));
+gulp.task("build", gulp.series("clean", "copy", "htmlmin", "css", "images", "webp", "uglify"));
 
 gulp.task("start", gulp.series("build", "server"));
