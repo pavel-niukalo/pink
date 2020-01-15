@@ -1,4 +1,6 @@
-ymaps.ready(function () {
+ymaps.ready(init);
+
+function init() {
   var myMap = new ymaps.Map('ymap', {
       center: [59.93863223569252, 30.322965421264662],
       zoom: 16,
@@ -24,4 +26,4 @@ ymaps.ready(function () {
     });
   myMap.geoObjects.add(myPlacemark);
   myMap.options.set('scrollZoomSpeed', 1);
-});
+};
