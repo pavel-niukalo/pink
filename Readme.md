@@ -58,3 +58,5 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.com/htmlacademy-adaptive/869225-pink-18
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/869225-pink-18/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/869225-pink-18?type=dev
+
+#### 5. Восстановлени активности
