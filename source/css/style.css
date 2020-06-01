@@ -2337,8 +2337,8 @@ a {
     .form__legend--textarea {
       top: 8px;
       width: 258px; }
-  .form__legend--contacts {
-    -ms-top: -8px; }
+    .form__legend--contacts {
+      top: -8px; }
   .form__input {
     margin-bottom: 48px; }
   .form__checkbox,
