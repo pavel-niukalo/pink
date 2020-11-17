@@ -1,5 +1,4 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
-
+# Личный проект «Пинк» [![Build Status](https://travis-ci.com/PavelNyukalo/pink.svg?branch=master)](https://travis-ci.com/PavelNyukalo/pink)
 * Студент: [Павел Нюкало](https://up.htmlacademy.ru/adaptive/18/user/869225).
 * Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
