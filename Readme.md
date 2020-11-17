@@ -8,12 +8,7 @@
 
 Репозиторий для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/869225-pink-18.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/869225-pink-18
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/869225-pink-18/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/869225-pink-18?type=dev
-
-Программа обучения
+### Программа обучения
 1. Методологии вёрстки
 2. Препроцессоры
 3. Адаптивные сетки
