@@ -2,14 +2,14 @@
 * Студент: [Павел Нюкало](https://up.htmlacademy.ru/adaptive/18/user/869225).
 * Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
-# О проекте
+## О проекте
 Адаптивный сайт фотоприложения для раскрашивания серых будней
 
 Браузерная поддержка - Google Chrome, Mozilla Firefox, IE 11
 
 [Ссылка на проект](https://pavelnyukalo.github.io/pink/)
 
-# Используемые технологии
+## Используемые технологии
 * HTML
 * SCSS
 * JavaScript
@@ -25,7 +25,7 @@
 Автоматизация настроена при помощи таск-раннера Gulp.  
 В проекте выполнены кадрирование и ретинизация изображений. 
 
-# Обучение
+## Обучение
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
