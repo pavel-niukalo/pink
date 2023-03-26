@@ -7,7 +7,7 @@
 
 Браузерная поддержка - Google Chrome, Mozilla Firefox, IE 11
 
-[Ссылка на проект](https://pavel-nyukalo.github.io/pink/)
+[Ссылка на проект](https://pavel-niukalo.github.io/pink/)
 
 ## Используемые технологии
 * HTML
